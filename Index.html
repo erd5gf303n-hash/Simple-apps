@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Count App</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    #count {
+      font-size: 64px;
+      margin: 30px;
+    }
+
+    button {
+      font-size: 30px;
+      padding: 15px 30px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Count App</h1>
+
+  <div id="count">0</div>
+
+  <button onclick="decrease()">−</button>
+  <button onclick="increase()">＋</button>
+
+  <script>
+    let count = 0;
+
+    function increase() {
+      count++;
+      document.getElementById("count").textContent = count;
+    }
+
+    function decrease() {
+      count--;
+      document.getElementById("count").textContent = count;
+    }
+  </script>
+
+</body>
+</html>
